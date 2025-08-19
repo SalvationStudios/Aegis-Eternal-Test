@@ -1,5 +1,6 @@
-package net.salvationstudios.pantheontest.item.custom;
+package net.salvationstudios.pantheontest.item.client.armor;
 
+import net.salvationstudios.pantheontest.item.custom.PantheonArmorItem;
 import net.salvationstudios.pantheontest.pantheontest;
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib.model.GeoModel;
