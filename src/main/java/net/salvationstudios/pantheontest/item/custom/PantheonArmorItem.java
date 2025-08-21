@@ -1,6 +1,6 @@
 package net.salvationstudios.pantheontest.item.custom;
 
-import net.salvationstudios.pantheontest.item.client.PantheonArmorRenderer;
+import net.salvationstudios.pantheontest.item.client.armor.PantheonArmorRenderer;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -28,7 +28,7 @@ public class PantheonArmorItem extends ArmorItem implements GeoItem {
     @Override
     public void initializeClient(Consumer<IClientItemExtensions> consumer) {
         consumer.accept(new IClientItemExtensions() {
-            private PantheonArmorItem renderer;
+            private PantheonArmorRenderer renderer;
 
             @Override
             public @NotNull HumanoidModel<?> getHumanoidArmorModel(LivingEntity livingEntity, ItemStack itemStack,

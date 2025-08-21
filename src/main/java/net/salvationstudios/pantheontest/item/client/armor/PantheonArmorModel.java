@@ -8,16 +8,16 @@ import software.bernie.geckolib.model.GeoModel;
 public class PantheonArmorModel extends GeoModel<PantheonArmorItem> {
     @Override
     public ResourceLocation getModelResource(PantheonArmorItem animatable) {
-        return new ResourceLocation(pantheontest.MOD_ID, "geo/pantheon_armor.json");
+        return ResourceLocation.fromNamespaceAndPath("pantheontest", "geo/pantheon_armor.json");
     }
 
     @Override
     public ResourceLocation getTextureResource(PantheonArmorItem animatable) {
-        return new ResourceLocation(pantheontest.MOD_ID, "textures/armor/pantheon.png");
+        return ResourceLocation.fromNamespaceAndPath("pantheontest", "textures/armor/pantheon.png");
     }
 
     @Override
     public ResourceLocation getAnimationResource(PantheonArmorItem animatable) {
-        return new ResourceLocation(pantheontest.MOD_ID, "animations/pantheon_armor.animation.json");
+        return ResourceLocation.fromNamespaceAndPath("pantheontest", "animations/pantheon_armor.animation.json");
     }
 }
